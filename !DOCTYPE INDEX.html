@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CuddleKart | Soft Toys Online India</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background:#fff1f4;
+}
+header{
+  background:linear-gradient(135deg,#ff4d6d,#ff758f);
+  color:#fff;
+  text-align:center;
+  padding:25px 15px;
+}
+header h1{
+  margin:0;
+  font-size:36px;
+}
+header p{
+  margin:8px 0 0;
+  font-size:16px;
+}
+.container{
+  padding:25px;
+}
+h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+}
+.card{
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+  overflow:hidden;
+  transition:transform 0.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+}
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+.card-content{
+  padding:15px;
+  text-align:center;
+}
+.card-content h3{
+  margin:5px 0;
+}
+.price{
+  color:#ff4d6d;
+  font-size:18px;
+  font-weight:bold;
+}
+.buy-btn{
+  margin-top:10px;
+  width:100%;
+  padding:12px;
+  background:#25D366;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  font-size:15px;
+  cursor:pointer;
+}
+.buy-btn:hover{
+  background:#1ebc5c;
+}
+footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:30px;
+  font-size:14px;
+}
+footer a{
+  color:#ffb3c1;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🧸 CuddleKart</h1>
+<p>Hugs Delivered with Love ❤️ | Soft Toys for Every Heart</p>
+</header>
+
+<div class="container">
+<h2>Our Best Selling Soft Toys</h2>
+
+<div class="products">
+
+<!-- PRODUCTS START -->
+
+<script>
+const products = [
+["Classic Teddy","499"],
+["Pink Teddy","549"],
+["Giant Teddy","1499"],
+["Cute Panda","699"],
+["Baby Elephant","599"],
+["Soft Rabbit","399"],
+["Heart Teddy","649"],
+["Couple Teddy","899"],
+["Sleepy Bear","749"],
+["Unicorn Plush","799"],
+["Cute Dog Plush","699"],
+["Kitty Soft Toy","599"],
+["Brown Bear","499"],
+["White Teddy","549"],
+["Love Panda","799"],
+["Kids Bunny","399"],
+["Mini Teddy","299"],
+["Big Hug Bear","1299"],
+["Emoji Cushion","349"],
+["Cartoon Doll","699"],
+["Soft Monkey","599"],
+["Penguin Plush","649"],
+["Lion Cub","699"],
+["Koala Soft Toy","749"],
+["Cute Dinosaur","799"],
+["Baby Giraffe","699"],
+["Plush Pillow","499"],
+["Gift Combo Pack","999"]
+];
+
+products.forEach(p=>{
+document.write(`
+<div class="card">
+<img src="https://source.unsplash.com/400x300/?soft,toy,${p[0].replace(" ","")}">
+<div class="card-content">
+<h3>${p[0]}</h3>
+<p class="price">₹${p[1]}</p>
+<a href="https://wa.me/917986861698?text=Hello%20CuddleKart!%20I%20want%20to%20buy%20${encodeURIComponent(p[0])}%20for%20₹${p[1]}.%20Please%20share%20UPI%20details."
+target="_blank">
+<button class="buy-btn">Buy Now on WhatsApp</button>
+</a>
+</div>
+</div>
+`);
+});
+</script>
+
+<!-- PRODUCTS END -->
+
+</div>
+</div>
+
+<footer>
+<p>📞 WhatsApp: <a href="https://wa.me/917986861698" target="_blank">+91 7986861698</a></p>
+<p>📧 Email: <a href="mailto:lovepreetyodha@gmail.com">lovepreetyodha@gmail.com</a></p>
+<p>🚚 Free Delivery Across India</p>
+<p>© 2025 CuddleKart</p>
+</footer>
+
+</body>
+</html>
